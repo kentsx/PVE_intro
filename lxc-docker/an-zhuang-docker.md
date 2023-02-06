@@ -7,7 +7,7 @@ apt install curl -y
 curl -sSL https://get.daocloud.io/docker | sh
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 出现这个界面，表示Docker已经安装好了
