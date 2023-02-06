@@ -26,7 +26,7 @@ description: 用portainer安装
 
 我的配置如图：
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>端口配置</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>端口配置</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>volume配置，注意bind模式</p></figcaption></figure>
 

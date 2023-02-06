@@ -71,7 +71,7 @@ systemctl restart pvedaemon.service
 关于核心数、内存、swap：我的理解为和空间一样，也是动态分配的，多给一点，没关系
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 左边关于虚拟网桥部分不用动
