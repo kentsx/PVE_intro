@@ -28,6 +28,8 @@ nano /etc/pve/lxc/[CT_ID].conf
 最后一句lxc.cap.drop = 参考了该页面
 
 [https://gist.github.com/kuanghan/9aa5dfea243ed109c0878267e2d80b13](https://gist.github.com/kuanghan/9aa5dfea243ed109c0878267e2d80b13)
+
+不知道是什么原因，我不加这句lxc.cap.drop，在portainer中安装docker是就会报错：**cap\_mac\_admin**
 {% endhint %}
 
 ```
@@ -40,6 +42,12 @@ lxc.mount.entry: /dev/fb0 dev/fb0 none bind,optional,create=file
 lxc.apparmor.profile: unconfined
 lxc.cap.drop =
 ```
+
+{% hint style="info" %}
+**BIOS中打开硬件直通相关选项（VT-d & VMX）**
+{% endhint %}
+
+## BIOS中的vt-d等虚拟化也要记得开启
 
 <details>
 
