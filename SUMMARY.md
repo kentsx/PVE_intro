@@ -17,3 +17,4 @@
 * [LXC容器内配置](lxc-docker/lxc-rong-qi-nei-pei-zhi.md)
 * [挂载远端目录](lxc-docker/gua-zai-yuan-duan-mu-lu.md)
 * [安装Docker](lxc-docker/an-zhuang-docker.md)
+* [Docker之Jellyfin](lxc-docker/docker-zhi-jellyfin.md)

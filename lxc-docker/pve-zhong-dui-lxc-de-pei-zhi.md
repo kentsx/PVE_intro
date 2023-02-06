@@ -40,3 +40,20 @@ lxc.apparmor.profile: unconfined
 lxc.cap.drop =
 ```
 
+<details>
+
+<summary>如何确认是否已经硬件导入LXC容器？</summary>
+
+在LXC的shell中，输入：&#x20;
+
+```
+cd /dev/dri
+ls
+```
+
+如果能看到屏幕如下显示，则OK了
+
+`by-path card0 renderD128`
+
+</details>
+

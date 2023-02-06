@@ -51,11 +51,11 @@ systemctl restart pvedaemon.service
 4、去掉无特权的勾，即特权容器，便于挂载目录及Docker安装
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>CT模板创建1</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>CT模板创建1</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>选择使用的CT模板</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>选择使用的CT模板</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>设置磁盘大小</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>设置磁盘大小</p></figcaption></figure>
 
 {% hint style="info" %}
 可以设置大一点，这个空间是动态的，并不实际占用
@@ -65,7 +65,7 @@ systemctl restart pvedaemon.service
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 关于核心数、内存、swap：我的理解为和空间一样，也是动态分配的，多给一点，没关系
@@ -79,7 +79,7 @@ systemctl restart pvedaemon.service
 右边一般使用静态，便于后期容器内设备的登录等；注意后面的<mark style="color:red;">`/24`</mark> 部分，
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 网络部分，我的主路由是192.168.10.1，所以静态地址选用了192.168.10.198，建议家庭内使用，就改变最后一段，也就是192.168.10.X，前面部分需要根据实际局域网来设定。DNS指向主路由IP。
