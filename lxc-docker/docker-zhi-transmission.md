@@ -25,3 +25,8 @@ linuxserver关于transmission的介绍： [https://hub.docker.com/r/linuxserver/
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>自动重启</p></figcaption></figure>
+
+由于我们没有挂载默认的incomplete文件夹，如果不设置，会出现文件先下载到incomplete中，再转到movie等文件夹中的情况；可以在transmission中设置，把临时目录不勾选。
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+

@@ -63,7 +63,7 @@ description: 用portainer安装
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>environment部分，非必须</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>自动重启</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>自动重启</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>硬件直通，映射给container</p></figcaption></figure>
 
