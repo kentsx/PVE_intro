@@ -12,4 +12,4 @@
 
 ## LXC-Docker
 
-* [Page 3](lxc-docker/page-3.md)
+* [LXC+Docker](lxc-docker/lxc+docker.md)
