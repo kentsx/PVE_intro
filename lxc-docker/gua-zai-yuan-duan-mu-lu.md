@@ -12,7 +12,6 @@ LXC容器内
 
 ```
 apt install cifs-utils -y
-mkdir /mnt/nas_share
 ```
 
 ## 创建SMB连接的密码文件
@@ -60,8 +59,17 @@ mkdir /mnt/movie
 ```
 
 {% hint style="info" %}
-我的远端文件在192.168.10.201的NAS中，远端文件也有一个/mnt/movie文件夹
+我的远端文件在192.168.10.201的NAS中，远端文件也有一个/movie文件夹
 
-//192.168.10.201/tv\_shows /mnt/tv\_shows cifs credentials=/root/.smbcredentials,iocharset=utf8 0 0
+//192.168.10.201/movie /mnt/movie cifs credentials=/root/.smbcredentials,iocharset=utf8 0 0
 {% endhint %}
 
+5、重启LXC容器
+
+```
+reboot
+```
+
+{% hint style="info" %}
+此时进入相应目录，ls -la就已经能够看到远端的文件和文件夹了
+{% endhint %}
