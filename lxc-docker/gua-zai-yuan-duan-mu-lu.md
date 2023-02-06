@@ -54,7 +54,7 @@ mkdir /mnt/movie
 4、加入挂载位置，自行替换
 
 ```
-//$smb_server/share /mnt/nas_share cifs credentials=/root/.smbcredentials,iocharset=utf8 0 0
+//$smb_server/share /mnt/nas_share cifs [nobrl,]credentials=/root/.smbcredentials,iocharset=utf8 0 0
 //**远端IP***/路径   ***挂载点路径*** **** ******密码文件位置***************** 注意相互之间空格
 ```
 
@@ -62,6 +62,8 @@ mkdir /mnt/movie
 我的远端文件在192.168.10.201的NAS中，远端文件也有一个/movie文件夹
 
 //192.168.10.201/movie /mnt/movie cifs credentials=/root/.smbcredentials,iocharset=utf8 0 0
+
+//192.168.10.201/appdata/J4125 /mnt/appdata cifs nobrl,credentials=/root/.smbcredentials,iocharset=utf8 0 0
 {% endhint %}
 
 5、重启LXC容器

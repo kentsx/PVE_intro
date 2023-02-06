@@ -37,11 +37,29 @@ description: 用portainer安装
 
 因为docker的绑定机制是先缓存在docker中，在文件不被写入后再存入绑定目录。但由于我们做了2次映射（docker-->LXC-->NAS），这里就会出现一个时间差，即缓存到NAS的时候，LXC对NAS的文件读写还在进行，而docker又要进行下一次的jellyfin.db读写，出现锁死问题。
 
-虽然官方文件说/config会很大，但我可能局限于局域网播放，暂时没有出现这个文件很大的问题
+虽然官方文件说/config会很大，但我可能局限于局域网播放，暂时没有出现这个文件很大的问题；因为比较大的文件应该是出现在转码时候产生的。
 
 * Jellyfin设置时见媒体图像保存到媒体所在文件夹！！
 * 后续我再看如何解决！！
 {% endhint %}
+
+{% hint style="success" %}
+前面问题的基本和我分析的差不多，主要出现在`byte range locks`
+{% endhint %}
+
+{% hint style="success" %}
+在安装calibre-web时同样也出现了这个问题，解决方案参考此文：
+
+[https://coderwall.com/p/zrxobw/calibre-libraries-on-nas](https://coderwall.com/p/zrxobw/calibre-libraries-on-nas)
+
+在mount的时候加入nobrl参数。
+
+针对Jellyfin，只有在/config目录下有db文件，有些docker应用会多处，可根据实际需求设置nobrl。
+
+//192.168.10.201/appdata/J4125 /mnt/appdata cifs nobrl,credentials=/root/.smbcredentials,iocharset=utf8 0 0
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>environment部分，非必须</p></figcaption></figure>
 
