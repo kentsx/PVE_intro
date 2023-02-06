@@ -4,7 +4,7 @@
 
 ## 💿 安装PVE
 
-* [安装PVE](an-zhuang-pve/an-zhuang-pve.md)
+* [安装PVE](an-zhuang-pve/page-2.md)
 
 ## 🔁 LXC-Docker
 
@@ -16,7 +16,8 @@
 * [Docker之Jellyfin](lxc-docker/docker-zhi-jellyfin.md)
 * [Docker之Transmission](lxc-docker/docker-zhi-transmission.md)
 * [Docker之Calibre-web](lxc-docker/docker-zhi-calibreweb.md)
+* [Docker之HomeAssistant](lxc-docker/docker-zhi-homeassistant.md)
 
 ## 📩 软路由
 
-* [软路由的接入](ruan-lu-you/ruan-lu-you-de-jie-ru.md)
+* [软路由的接入](ruan-lu-you/page-1.md)
