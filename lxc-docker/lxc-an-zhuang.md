@@ -2,7 +2,7 @@
 description: 通过CT模板创建创建LXC，再套娃Docker
 ---
 
-# LXC+Docker
+# LXC安装
 
 ## LXC+Docker套娃的原因
 
@@ -21,7 +21,7 @@ cp /usr/share/perl5/PVE/APLInfo.pm /usr/share/perl5/PVE/APLInfo.pm_back
 sed -i 's|http://download.proxmox.com|https://mirrors.tuna.tsinghua.edu.cn/proxmox|g' /usr/share/perl5/PVE/APLInfo.pm
 ```
 
-重启服务
+### 重启服务
 
 ```
 systemctl restart pvedaemon.service
@@ -33,13 +33,13 @@ systemctl restart pvedaemon.service
 是在local（pve）中
 {% endhint %}
 
-2.1 选择`CT模板`，右侧上方的`模板`中选择需要下载的模板
+### 2.1 选择`CT模板`，右侧上方的`模板`中选择需要下载的模板
 
 {% hint style="warning" %}
 此处以`debian-11-standard_11.3-1_amd64.tar.zst为例`
 {% endhint %}
 
-2.2 点击右上角 `创建CT` &#x20;
+### 2.2 点击右上角 `创建CT` &#x20;
 
 {% hint style="info" %}
 1、记住CT ID，该数字与conf文件有关

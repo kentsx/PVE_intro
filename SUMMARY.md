@@ -12,4 +12,7 @@
 
 ## LXC-Docker
 
-* [LXC+Docker](lxc-docker/lxc+docker.md)
+* [LXC安装](lxc-docker/lxc-an-zhuang.md)
+* [PVE中对LXC的配置](lxc-docker/pve-zhong-dui-lxc-de-pei-zhi.md)
+* [LXC容器内配置](lxc-docker/lxc-rong-qi-nei-pei-zhi.md)
+* [挂载远端目录](lxc-docker/gua-zai-yuan-duan-mu-lu.md)
