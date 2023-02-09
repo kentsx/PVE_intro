@@ -16,7 +16,7 @@ description: docker命令行安装
 [https://coderwall.com/p/zrxobw/calibre-libraries-on-nas](https://coderwall.com/p/zrxobw/calibre-libraries-on-nas)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ```
  docker create  \

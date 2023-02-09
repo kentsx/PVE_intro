@@ -6,11 +6,11 @@ description: 用portainer安装
 
 ## 进入local的Container
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ## 添加容器
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 我的设备为J4125，建议使用 <mark style="color:blue;">`nyanmisaka/jellyfin`</mark>
@@ -26,9 +26,9 @@ description: 用portainer安装
 
 我的配置如图：
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>端口配置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>端口配置</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>volume配置，注意bind模式</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>volume配置，注意bind模式</p></figcaption></figure>
 
 {% hint style="danger" %}
 这里不能配置/config目录，一旦配置，会无法启动jellyfin
@@ -59,17 +59,17 @@ description: 用portainer安装
 //192.168.10.201/appdata/J4125 /mnt/appdata cifs nobrl,credentials=/root/.smbcredentials,iocharset=utf8 0 0
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>environment部分，非必须</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>environment部分，非必须</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>自动重启</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>自动重启</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>硬件直通，映射给container</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>硬件直通，映射给container</p></figcaption></figure>
 
 全部设置完以后，点击 <mark style="color:blue;">`Deploy the container`</mark>
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 等待部署完成，Portainer会跳转回Container list界面，Jellyfin显示已经开始运行后，就可以在`IP:8096`中打开了
 
@@ -77,7 +77,7 @@ description: 用portainer安装
 
 在选择完媒体库信息后，进入Jellyfin的控制台-->播放中
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>开启硬件解码</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>开启硬件解码</p></figcaption></figure>
 
 * [x] 启用VPP色调映射
 * [x] 启用色调映射
